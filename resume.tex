@@ -76,7 +76,7 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://github.com/lexuancuong}{\Large Le Xuan Cuong}} & Email : \href{mailto:cuongle.software@gmail.com}{cuongle.software@gmail.com}\\
-  \href{https://linkedin.com/in/lxcuong}{linkedin.com/in/lxcuong} $|$ \href{https://github.com/lexuancuong}{github.com/lexuancuong} & Mobile : +84 77 888 7894 \\
+  \href{https://linkedin.com/in/lxcuong}{linkedin.com/in/lxcuong} $|$ \href{https://github.com/lexuancuong}{github.com/lexuancuong} $|$ \href{https://cuongkane.com}{cuongkane.com} & Mobile : +84 77 888 7894 \\
 \end{tabular*}
 
 %-----------SUMMARY-----------------
@@ -108,12 +108,14 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
       \resumeItemListStart
         \resumeItem{System Architecture \& Design}
           {Led architecture design reviews for 10+ Technical Designs spanning ML systems, analytics platforms, and real-time pipelines. Authored cross-team TD for ML-based carrier identification across 7 microservices, reviewed by CTO.}
+        \resumeItem{Microservices \& Database Splitting}
+          {Executed 2 microservice decompositions and 2 database splits to improve system modularity and team autonomy. Designed backward-compatible APIs and coordinated cross-squad releases for zero-downtime migrations.}
         \resumeItem{High-Availability Cloud Systems}
-          {Built mission-critical Reports \& Analytics platform (Jaspersoft/ClickHouse) and Alert Management system using DDD architecture with Dagster orchestration. Integrated Grafana/Sentry for 24/7 monitoring and incident response.}
+          {Built mission-critical Reports \& Analytics platform (Jaspersoft/ClickHouse) and Alert Management system using DDD architecture with Dagster orchestration. Optimized chart loading performance through static file caching, improving customer dashboard experience.}
         \resumeItem{Real-Time Data Pipelines}
           {Architected ML-based carrier identification pipeline spanning 7 microservices (Flink CoreJobs, Scraper, DataIO, Scheduler), processing millions of daily events. Designed seamless integration with legacy regex flow using feature toggles and Kafka protobuf schemas, improving parcel found rate while preventing recursive scrape loops.}
         \resumeItem{AI/ML Solutions}
-          {Architected L3 AI agents using LangChain/LangGraph with ReAct pattern and AWS Bedrock. Built tool-based architecture for Root Cause Analysis and automated insights generation with LangSmith monitoring.}
+          {Architected L3 AI agents using LangChain/LangGraph with ReAct pattern and AWS Bedrock. Built tool-based architecture for Root Cause Analysis and automated insights generation. Optimized LLM costs through strategic model selection and prompt engineering.}
         \resumeItem{Engineering Excellence}
           {Pioneered AI-assisted Technical Design process (first squad at company). Delivered 105+ tickets as sole backend engineer with 100\% on-time delivery. Introduced Django Clickhouse ORM and Django Ninja framework.}
         \resumeItem{Release \& Deployment Strategy}
@@ -122,6 +124,8 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
           {Constructed comprehensive monitoring and alerting strategies using Grafana dashboards and Sentry error tracking. Established proactive observability practices enabling data-driven capacity planning and sustainable system evolution.}
         \resumeItem{Mentorship \& Knowledge Sharing}
           {Mentored 2 engineers to promotion-readiness through architecture discussions, code reviews, and pair programming. Delivered 15+ Open Space sessions on system design, AI/LangChain, and Flink; fostered bidirectional learning culture to continuously grow team expertise.}
+        \resumeItem{Engineering Leadership}
+          {Conducted 6+ technical interviews for junior/mid-level engineers. Established runbook and postmortem culture for incident response. Championed coding standards (PEP8, code smell prevention, TDD, Django project structure). Led backlog grooming for tech debt prioritization.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -144,8 +148,10 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
           {Designed fault-tolerant Booking API spanning 5+ microservices with sync-to-async fallback pattern. Implemented Kafka-based async processing as fallback when synchronous calls timeout, ensuring booking completion despite component failures.}
         \resumeItem{Celery Pipeline Architecture}
           {Built Collection Point data pipeline using Celery canvas patterns (chain, chord, group) with optimized worker configuration for scalability. Designed simple, maintainable task breakdown (8K+ postal codes chunked into parallel sub-tasks). Evaluated 3 scheduling approaches; selected Celery Beat for auto-retry and fault tolerance.}
-        \resumeItem{System Reliability}
-          {Resolved critical production incidents: BFCM traffic spikes (10x load), Redis cluster hotspots, and emergency data re-imports (1.6M shipments in 2 days). Established incident response protocols.}
+        \resumeItem{System Reliability \& Incident Response}
+          {Resolved critical production incidents: BFCM traffic spikes (10x load), diagnosed and documented Redis cluster hotspot solutions, and executed emergency data re-imports (1.6M shipments in 2 days). Established incident response protocols and contributed technical blog posts for knowledge sharing.}
+        \resumeItem{Large-Scale Data Migrations}
+          {Executed production data migrations handling SQL timeout constraints, autovacuum optimization, and strategic indexing. Implemented incremental update patterns to minimize downtime and ensure data consistency across distributed systems.}
         \resumeItem{Open Source \& Innovation}
           {Introduced Django Ninja framework (adopted company-wide), TDD practices, and coverage tooling. Proposed RabbitMQ migration to resolve Redis memory bottlenecks.}
       \resumeItemListEnd
@@ -182,12 +188,21 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
       {Valid: Jan 2025 -- Jan 2028}{}
   \resumeSubHeadingListEnd
 
+%-----------AWARDS-----------------
+\section{Awards \& Recognition}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Parcel Perform (2022-Present)}
+      {Member of the Month (3x), Best Presentation Award, AVA AI Award for AI adoption, Professional Style Award.}
+    \resumeSubItem{Cinnamon AI Labs (2020-2022)}
+      {Employee Recognition Award for outstanding technical contributions.}
+  \resumeSubHeadingListEnd
+
 %
 %--------PROGRAMMING SKILLS------------
 \section{Technical Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Architecture}{: High-Availability Systems, Microservices, DDD, System Design, RESTful APIs, TDD, Canary Deployments, Feature Toggles}
+     \textbf{Architecture}{: High-Availability Systems, Microservices, DDD, System Design, RESTful APIs, TDD, Canary Deployments, Feature Toggles, Outbox Pattern, SSO/OAuth}
    }
    \item{
      \textbf{Big Data \& Pipeline}{: Apache Flink, Kafka, Celery (canvas: chain/chord/group), Dagster, RabbitMQ}
