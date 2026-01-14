@@ -21,5 +21,4 @@
 *.fls_latexmk
 *.xml
 *SAVE-ERROR
-*.pdf
 *.DS_Store
