@@ -92,25 +92,25 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
       {Senior Backend Engineer}{Aug 2024 - Present}
       \resumeItemListStart
         \resumeItem{System Architecture \& Design}
-          {Spearheaded 10+ architecture design reviews for ML systems, analytics platforms, and real-time pipelines. Authored cross-team TD for ML-based carrier identification across 7 microservices, reviewed and approved by CTO.}
+          {Directed architecture for 10+ systems including ML and real-time pipelines; authored cross-team Technical Design for carrier identification spanning 7 microservices, approved by CTO.}
         \resumeItem{Microservices \& Database Splitting}
-          {Decomposed 2 monolithic services into microservices and executed 2 database splits, improving system modularity and team autonomy. Coordinated cross-squad releases with backward-compatible APIs for zero-downtime migrations.}
+          {Engineered decomposition of 2 monoliths into microservices with zero-downtime database splitting, enhancing modularity and enabling autonomous team deployments.}
         \resumeItem{High-Availability Cloud Systems}
-          {Delivered mission-critical Reports \& Analytics platform (Jaspersoft/ClickHouse) and Alert Management system using DDD architecture with Dagster orchestration. Accelerated chart loading through static file caching, enhancing customer dashboard experience.}
+          {Architected mission-critical Analytics platform (ClickHouse/Dagster) using DDD; accelerated dashboard chart loading by implementing static file caching strategies.}
         \resumeItem{Real-Time Data Pipelines}
-          {Orchestrated ML-based carrier identification pipeline spanning 7 microservices (Flink CoreJobs, Scraper, DataIO, Scheduler), processing millions of daily events. Integrated seamlessly with legacy regex flow using feature toggles and Kafka protobuf schemas, boosting parcel found rate while preventing recursive scrape loops.}
+          {Optimized ML-based carrier identification pipeline processing millions of daily events across 7 microservices; increased parcel found rate by seamlessly integrating ML models with legacy regex flows.}
         \resumeItem{AI/ML Solutions}
-          {Engineered L3 AI agents using LangChain/LangGraph with ReAct pattern and AWS Bedrock. Implemented tool-based architecture for Root Cause Analysis and automated insights generation. Reduced LLM costs by 20\% through strategic model selection while maintaining output quality.}
+          {Built L3 AI agents using LangChain/ReAct and AWS Bedrock; reduced LLM costs by 20\% via strategic model selection while automating Root Cause Analysis workflows.}
         \resumeItem{Engineering Excellence}
-          {Pioneered AI-assisted Technical Design workflow, becoming first squad adopter company-wide. Delivered 105+ tickets as sole backend engineer with 100\% on-time delivery. Shipped AI features under tight deadline for CEO conference demo.}
+          {Delivered 105+ tickets with 100\% on-time record as sole backend engineer; pioneered company-wide adoption of AI-assisted Technical Design workflows.}
         \resumeItem{Release \& Deployment Strategy}
-          {Established release protocols using canary deployments, A/B testing, and feature toggles. Introduced 4-day advance deployment booking and mandatory QA sign-off, achieving zero-downtime releases with minimal incidents.}
+          {Achieved zero-downtime releases by establishing canary deployment protocols, A/B testing, and mandatory QA gates for all production changes.}
         \resumeItem{Observability \& Sustainable Growth}
-          {Established observability practice with Grafana dashboards tracking P95/P99 latencies, Kafka consumer lag, and success/failure rates. Championed dashboard-first approach enabling data-driven capacity planning and proactive debugging.}
+          {Enhanced system reliability by implementing Grafana dashboards for P95/P99 latencies and Kafka lag, enabling data-driven capacity planning and proactive debugging.}
         \resumeItem{Mentorship \& Knowledge Sharing}
-          {Mentored 2 engineers to promotion-readiness through architecture discussions, code reviews, and pair programming. Delivered 15+ Open Space sessions on system design, AI/LangChain, and Flink, fostering bidirectional learning culture.}
+          {Mentored 2 engineers to promotion-readiness and fostered learning culture by delivering 15+ technical sessions on System Design, AI/LangChain, and Flink.}
         \resumeItem{Engineering Leadership}
-          {Conducted 6+ technical interviews for junior/mid-level candidates. Established runbook and postmortem culture for incident response. Championed coding standards (PEP8, TDD, Django structure) and led backlog grooming with story point re-estimation.}
+          {Strengthened engineering standards by establishing incident response runbooks, enforcing PEP8/TDD practices, and conducting 6+ technical interviews.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -118,27 +118,27 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
       {Backend Engineer}{Jul 2022 - Aug 2024}
       \resumeItemListStart
         \resumeItem{Scalable API Development}
-          {Launched Public Booking API with OpenAPI spec serving multi-carrier integrations (DHL, MyParcel, Shippo). Implemented S3 pre-signed URLs, Kafka async processing, and Celery-based rate limiting to protect third-party APIs.}
+          {Launched Public Booking API for multi-carrier integrations (DHL, Shippo); implemented S3 pre-signed URLs and Celery-based rate limiting to protect third-party resources.}
         \resumeItem{Extensible Integration Architecture}
-          {Architected base booking integration abstraction supporting 50+ carrier integrations. Validated requirements through practical usage testing and Product collaboration to build flexible, extensible foundation.}
+          {Designed extensible integration framework supporting 50+ carriers; validated requirements through usage testing to ensure scalability for future logistics partners.}
         \resumeItem{High-Volume Data Pipelines}
-          {Scaled data pipeline to 5M+ daily events across scheduler, scraper, data I/O, and Apache Flink services. Maintained sub-second latency for mission-critical shipment tracking.}
+          {Scaled data pipeline to process 5M+ daily events with sub-second latency for mission-critical tracking using Apache Flink and optimized microservices.}
         \resumeItem{Cross-Functional Collaboration}
-          {Authored 4+ Technical Designs collaborating with Product and Design through HLD meetings. Applied ubiquitous language (DDD) to align domains and negotiated deliverables presenting trade-offs on resources and technical constraints.}
+          {Aligned cross-functional teams by authoring 4+ Technical Designs using Domain-Driven Design (DDD) principles to define clear boundaries and deliverables.}
         \resumeItem{Email Extraction Platform}
-          {Engineered pattern-based email extraction engine (Regex/XPath/custom formatters) with Kafka CDC pipeline. System running 3+ years in production processing shipment notification emails.}
+          {Engineered high-throughput email extraction engine using Kafka CDC; system has processed shipment notifications reliably in production for 3+ years.}
         \resumeItem{Architectural Decision Records}
-          {Documented architectural decisions with rejected alternatives and trade-off analysis. Evaluated 4 approaches for email processing; selected app-based CDC, recording rationale for team alignment.}
+          {Standardized architectural decision records (ADR); evaluated 4 approaches for email processing to ensure long-term team alignment on technical strategy.}
         \resumeItem{Sync-to-Async Reliability Pattern}
-          {Architected fault-tolerant Booking API spanning 5+ microservices with sync-to-async fallback pattern. Implemented Kafka-based async processing ensuring booking completion despite component failures.}
+          {Ensured booking reliability by architecting a sync-to-async fallback pattern across 5 microservices using Kafka to handle component failures.}
         \resumeItem{Celery Pipeline Architecture}
-          {Orchestrated Collection Point data pipeline using Celery canvas patterns (chain, chord/group) with optimized worker configuration. Parallelized 8K+ postal codes into chunked sub-tasks. Selected Celery Beat for auto-retry and fault tolerance.}
+          {Accelerated data processing by parallelizing 8K+ postal code tasks using optimized Celery canvas patterns (chain/chord) and worker configurations.}
         \resumeItem{System Reliability \& Incident Response}
-          {Diagnosed and resolved critical production incidents: BFCM traffic spikes (10x load), Redis cluster hotspots. Built recovery script in 24 hours restoring 1.5M records across multiple services for enterprise customer.}
+          {Restored 1.5M records during critical incidents within 24 hours by developing custom recovery scripts and resolving Redis cluster hotspots under 10x traffic load.}
         \resumeItem{Large-Scale Data Migrations}
-          {Executed production data migrations handling SQL timeout constraints, autovacuum optimization, and strategic indexing. Implemented incremental update patterns ensuring data consistency across distributed systems.}
+          {Secured data consistency during large-scale migrations by implementing incremental update patterns, optimizing SQL indexing, and managing autovacuum constraints.}
         \resumeItem{Testing \& Developer Experience}
-          {Authored company-wide testing best practices guide (AAA pattern, black-box testing, flaky test prevention). Drove tool adoption: Poetry, Ruff/Pyright, Django Ninja. Created onboarding documentation enabling 5 engineers to ramp up faster.}
+          {Reduced onboarding time for 5 engineers by defining company-wide testing standards (AAA pattern) and driving adoption of modern tooling (Poetry, Ruff).}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -146,13 +146,13 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
       {Software Engineer}{Aug 2020 - Jul 2022}
       \resumeItemListStart
         \resumeItem{Enterprise Client Delivery}
-          {Shipped production systems for 4 Fortune 500 clients (Deloitte, Bridgestone, Daikin, Sumitomo) in document processing and AI automation domains.}
+          {Deployed enterprise-grade document processing systems for 4 Fortune 500 clients (Deloitte, Bridgestone), directly driving client success in AI automation.}
         \resumeItem{Multi-Framework Backend Development}
-          {Delivered solutions across 3 web frameworks (Flask, FastAPI, Django) adapting to varied client requirements. Designed RESTful APIs using Repository-Services pattern and SOLID principles.}
+          {Developed versatile backend solutions using Flask, FastAPI, and Django, strictly adhering to SOLID principles and Repository patterns.}
         \resumeItem{Multi-Cloud Infrastructure}
-          {Provisioned and maintained services across AWS, Azure, and GCP for enterprise clients. Containerized applications with Docker enabling consistent cross-cloud deployments.}
+          {Managed multi-cloud infrastructure (AWS, Azure, GCP) and containerized applications with Docker to ensure consistent cross-cloud deployments.}
         \resumeItem{ML-to-Production Pipeline}
-          {Partnered with AI researchers and product managers to translate ML models into production-ready solutions meeting client SLAs.}
+          {Bridged gap between research and production by converting experimental ML models into scalable, SLA-compliant API services.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -162,19 +162,11 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{Codlis - AI Code Visualization (Master's Thesis, H2 2025) (\href{https://codlis.com}{codlis.com})}
-      {Multi-agent LLM system for interactive code comprehension.
-       Architected 5-agent pipeline (Scanner, Analyzer, Architect, Illustrator, Proofreader)
-       with Knowledge Graph and ReAct reasoning.
-       User study: 2.9x task success rate, 29\% cognitive load reduction vs baseline (p<.001).
-       Stack: Django/Celery, Next.js, LangChain.}
+      {Architected multi-agent LLM system for interactive code comprehension using LangChain and Knowledge Graphs. Validated effectiveness via user study showing 2.9x higher task success rate and 29\% cognitive load reduction (p<.001).}
     \resumeSubItem{SweatCharge - Sports Club Management (H1 2025) (\href{https://sweatcharge.com}{sweatcharge.com})}
-      {Full-stack member management featuring role-based SSO (owner/manager/player permissions),
-       fuzzy name matching for player association, and automated cost splitting with billing.
-       React/TypeScript with production users.}
+      {Developed full-stack sports management platform with role-based SSO and automated billing; currently servicing active production users. Implemented fuzzy matching algorithms for player association using React/TypeScript.}
     \resumeSubItem{Hasiti - AI Hairstyle Simulator (Bachelor's Thesis, 2021)}
-      {Deep learning application for real-time hairstyle simulation from reference images.
-       Trained and fine-tuned CNN networks for style transfer across diverse hair types.
-       Architected full-stack system: React Native mobile app with Python/Flask AI serving backend.}
+      {Built real-time hairstyle simulation app using fine-tuned CNNs for style transfer. Architected full-stack solution connecting React Native mobile client with Python/Flask AI inference backend.}
   \resumeSubHeadingListEnd
 
 %-----------CERTIFICATIONS-----------------
