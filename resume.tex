@@ -115,11 +115,11 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
         \resumeItem{Real-Time Data Pipelines}
           {Architected ML-based carrier identification pipeline spanning 7 microservices (Flink CoreJobs, Scraper, DataIO, Scheduler), processing millions of daily events. Designed seamless integration with legacy regex flow using feature toggles and Kafka protobuf schemas, improving parcel found rate while preventing recursive scrape loops.}
         \resumeItem{AI/ML Solutions}
-          {Architected L3 AI agents using LangChain/LangGraph with ReAct pattern and AWS Bedrock. Built tool-based architecture for Root Cause Analysis and automated insights generation. Optimized LLM costs through strategic model selection and prompt engineering.}
+          {Architected L3 AI agents using LangChain/LangGraph with ReAct pattern and AWS Bedrock. Built tool-based architecture for Root Cause Analysis and automated insights generation. Reduced LLM costs by 20\% through strategic model selection while maintaining output quality.}
         \resumeItem{Engineering Excellence}
-          {Pioneered AI-assisted Technical Design process (first squad at company). Delivered 105+ tickets as sole backend engineer with 100\% on-time delivery. Introduced Django Clickhouse ORM and Django Ninja framework.}
+          {Pioneered AI-assisted Technical Design process (first squad at company). Delivered 105+ tickets as sole backend engineer with 100\% on-time delivery. Shipped AI features under tight deadline for CEO conference demo, keeping pace with market competitors.}
         \resumeItem{Release \& Deployment Strategy}
-          {Designed release and deployment plans using canary deployments, A/B testing, and feature toggles to achieve zero-downtime releases. Coordinated strictly with QA on deployment schedules and risk mitigation, ensuring deliverable releases with minimal production incidents.}
+          {Designed release and deployment plans using canary deployments, A/B testing, and feature toggles. Introduced process improvements: 4-day advance deployment booking, mandatory QA sign-off on deployment plans, achieving zero-downtime releases with minimal incidents.}
         \resumeItem{Observability \& Sustainable Growth}
           {Built Grafana dashboards tracking P95/P99 latencies, Kafka consumer lag, and success/failure rates. Championed dashboard-first approach before major changes and debugging. Enabled data-driven capacity planning and sustainable system evolution.}
         \resumeItem{Mentorship \& Knowledge Sharing}
@@ -133,17 +133,17 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
       {Backend Engineer}{Jul 2022 - Aug 2024}
       \resumeItemListStart
         \resumeItem{Scalable API Development}
-          {Architected Public Booking API with OpenAPI spec serving multi-carrier integrations (DHL, MyParcel, Shippo). Implemented S3 pre-signed URLs and Kafka async processing for high-throughput operations.}
+          {Architected Public Booking API with OpenAPI spec serving multi-carrier integrations (DHL, MyParcel, Shippo). Implemented S3 pre-signed URLs, Kafka async processing, and Celery-based rate limiting to protect third-party APIs.}
         \resumeItem{Extensible Integration Architecture}
           {Designed base booking integration abstraction supporting 50+ carrier integrations. Gathered requirements through practical usage testing and Product collaboration to build flexible, extensible foundation.}
         \resumeItem{High-Volume Data Pipelines}
           {Built and maintained data pipeline processing 5M+ daily events across scheduler, scraper, data I/O, and Apache Flink services. Ensured sub-second latency for mission-critical shipment tracking.}
         \resumeItem{Cross-Functional Collaboration}
-          {Authored 4+ Technical Designs collaborating with Product and Design through HLD meetings. Applied ubiquitous language (DDD) to align technical and business domains. Presented complex systems (AI agents, tool architectures) to non-technical stakeholders.}
+          {Authored 4+ Technical Designs collaborating with Product and Design through HLD meetings. Applied ubiquitous language (DDD) to align domains. Negotiated deliverables with Product, presenting trade-offs on resources, timing, and technical constraints.}
         \resumeItem{Email Extraction Platform}
           {Designed pattern-based email extraction engine (Regex/XPath/custom formatters) with Kafka CDC pipeline. System running 3+ years in production processing shipment notification emails.}
-        \resumeItem{Architectural Decision-Making}
-          {Evaluated 4 architectural approaches for email processing pipeline using structured criteria (reliability, scalability, maintainability). Selected app-based CDC over cronjob/Flink alternatives, documenting trade-offs and accepted drawbacks for transparent technical decisions.}
+        \resumeItem{Architectural Decision Records}
+          {Documented architectural decisions with rejected alternatives and trade-off analysis in Technical Designs. Evaluated 4 approaches for email processing; selected app-based CDC, recording rationale for future reference and team alignment.}
         \resumeItem{Sync-to-Async Reliability Pattern}
           {Designed fault-tolerant Booking API spanning 5+ microservices with sync-to-async fallback pattern. Implemented Kafka-based async processing as fallback when synchronous calls timeout, ensuring booking completion despite component failures.}
         \resumeItem{Celery Pipeline Architecture}
@@ -153,7 +153,7 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
         \resumeItem{Large-Scale Data Migrations}
           {Executed production data migrations handling SQL timeout constraints, autovacuum optimization, and strategic indexing. Implemented incremental update patterns to minimize downtime and ensure data consistency across distributed systems.}
         \resumeItem{Testing \& Developer Experience}
-          {Authored testing best practices guide (AAA pattern, black-box testing, flaky test prevention) and presented company-wide. Led tool adoption: Poetry over pip, Ruff/Pyright linters, Django Ninja framework. Improved Docker-based local dev setup for faster onboarding and AI-assisted development.}
+          {Authored testing best practices guide (AAA pattern, black-box testing, flaky test prevention) presented company-wide. Led tool adoption: Poetry, Ruff/Pyright, Django Ninja. Created onboarding documentation enabling 5 engineers to ramp up faster on complex domain.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -176,8 +176,10 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{RESTful API Template (Cinnamon AI Labs)}
-      {Architected reusable API template adopted across 4+ client projects. Applied Repository-Services Pattern and SOLID principles with Celery/RabbitMQ for async task processing.}
+    \resumeSubItem{Codlis - AI Code Visualization (Master's Thesis, H2 2025) (\href{https://codlis.com}{codlis.com})}
+      {Multi-agent LLM system for interactive code comprehension. Built 5-agent architecture (Scanner, Analyzer, Architect, Illustrator, Proofreader) with Knowledge Graph and ReAct reasoning. User study: 2.9x task success rate, 29\% cognitive load reduction vs baseline (p<.001). Stack: Django/Celery, Next.js, LangChain.}
+    \resumeSubItem{SweatCharge - Sports Club Management (H1 2025) (\href{https://sweatcharge.com}{sweatcharge.com})}
+      {Full-stack member management with role-based SSO (owner/manager/player permissions), fuzzy name matching for player association from raw text, automated cost splitting and billing. React/TypeScript with production users.}
   \resumeSubHeadingListEnd
 
 %-----------CERTIFICATIONS-----------------
@@ -214,13 +216,13 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
      \textbf{AI/ML}{: LangChain, LangGraph, LangSmith, AI Agents, Prompt Engineering}
    }
    \item{
-     \textbf{Languages}{: Python, Scala, Java, JavaScript, SQL}
+     \textbf{Languages}{: Python, Scala, Java, TypeScript, SQL}
    }
    \item{
      \textbf{Databases \& Data Stores}{: PostgreSQL, Redis, ClickHouse}
    }
    \item{
-     \textbf{Web Frameworks}{: Django, Django Ninja, FastAPI}
+     \textbf{Web Frameworks}{: Django, Django Ninja, FastAPI, Pydantic, Next.js/React (side projects)}
    }
  \resumeSubHeadingListEnd
 
