@@ -111,7 +111,7 @@ Senior Backend Engineer with 6+ years building highly-available, scalable cloud 
         \resumeItem{High-Availability Cloud Systems}
           {Built mission-critical Reports \& Analytics platform (Jaspersoft/ClickHouse) and Alert Management system using DDD architecture with Dagster orchestration. Integrated Grafana/Sentry for 24/7 monitoring and incident response.}
         \resumeItem{Real-Time Data Pipelines}
-          {Designed ML-based carrier identification system processing millions of events via Apache Flink, Kafka, and microservices (Scraper, DataIO, Scheduler), improving parcel found rate for end customers.}
+          {Architected ML-based carrier identification pipeline spanning 7 microservices (Flink CoreJobs, Scraper, DataIO, Scheduler), processing millions of daily events. Designed seamless integration with legacy regex flow using feature toggles and Kafka protobuf schemas, improving parcel found rate while preventing recursive scrape loops.}
         \resumeItem{AI/ML Solutions}
           {Architected L3 AI agents using LangChain/LangGraph with ReAct pattern and AWS Bedrock. Built tool-based architecture for Root Cause Analysis and automated insights generation with LangSmith monitoring.}
         \resumeItem{Engineering Excellence}
@@ -126,10 +126,16 @@ Senior Backend Engineer with 6+ years building highly-available, scalable cloud 
       \resumeItemListStart
         \resumeItem{Scalable API Development}
           {Architected Public Booking API with OpenAPI spec serving multi-carrier integrations (DHL, MyParcel, Shippo). Implemented S3 pre-signed URLs and Kafka async processing for high-throughput operations.}
+        \resumeItem{Extensible Integration Architecture}
+          {Designed base booking integration abstraction supporting 50+ carrier integrations. Gathered requirements through practical usage testing and Product collaboration to build flexible, extensible foundation.}
         \resumeItem{High-Volume Data Pipelines}
           {Built and maintained data pipeline processing 5M+ daily events across scheduler, scraper, data I/O, and Apache Flink services. Ensured sub-second latency for mission-critical shipment tracking.}
         \resumeItem{Cross-Functional Collaboration}
           {Authored 4+ Technical Designs collaborating with Product and Design through HLD meetings. Translated customer requirements into scalable, maintainable architectures.}
+        \resumeItem{Email Extraction Platform}
+          {Designed pattern-based email extraction engine (Regex/XPath/custom formatters) with Kafka CDC pipeline. System running 3+ years in production processing shipment notification emails.}
+        \resumeItem{Architectural Decision-Making}
+          {Evaluated 4 architectural approaches for email processing pipeline using structured criteria (reliability, scalability, maintainability). Selected app-based CDC over cronjob/Flink alternatives, documenting trade-offs and accepted drawbacks for transparent technical decisions.}
         \resumeItem{System Reliability}
           {Resolved critical production incidents: BFCM traffic spikes (10x load), Redis cluster hotspots, and emergency data re-imports (1.6M shipments in 2 days). Established incident response protocols.}
         \resumeItem{Open Source \& Innovation}
