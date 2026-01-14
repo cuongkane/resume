@@ -81,7 +81,7 @@
 
 %-----------SUMMARY-----------------
 \section{Summary}
-Senior Backend Engineer with 6 years building highly-available, scalable cloud systems processing millions of daily transactions. Led architecture design for 10+ Technical Designs across microservices, ML systems, analytics platforms, and real-time pipelines. Track record mentoring engineers and driving cross-functional delivery with Product and Design teams. AWS Certified Solutions Architect.
+Senior Backend Engineer with 6 years building highly-available, scalable cloud systems processing millions of daily transactions. Grew from individual contributor to technical owner of 4 microservices. Led architecture design for 10+ Technical Designs across microservices, ML systems, and real-time pipelines. Highly adaptive to emerging technologies (AI agents, LLMs, modern tooling). AWS Certified Solutions Architect.
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -121,11 +121,11 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
         \resumeItem{Release \& Deployment Strategy}
           {Designed release and deployment plans using canary deployments, A/B testing, and feature toggles to achieve zero-downtime releases. Coordinated strictly with QA on deployment schedules and risk mitigation, ensuring deliverable releases with minimal production incidents.}
         \resumeItem{Observability \& Sustainable Growth}
-          {Constructed comprehensive monitoring and alerting strategies using Grafana dashboards and Sentry error tracking. Established proactive observability practices enabling data-driven capacity planning and sustainable system evolution.}
+          {Built Grafana dashboards tracking P95/P99 latencies, Kafka consumer lag, and success/failure rates. Championed dashboard-first approach before major changes and debugging. Enabled data-driven capacity planning and sustainable system evolution.}
         \resumeItem{Mentorship \& Knowledge Sharing}
           {Mentored 2 engineers to promotion-readiness through architecture discussions, code reviews, and pair programming. Delivered 15+ Open Space sessions on system design, AI/LangChain, and Flink; fostered bidirectional learning culture to continuously grow team expertise.}
         \resumeItem{Engineering Leadership}
-          {Conducted 6+ technical interviews for junior/mid-level engineers. Established runbook and postmortem culture for incident response. Championed coding standards (PEP8, code smell prevention, TDD, Django project structure). Led backlog grooming for tech debt prioritization.}
+          {Conducted 6+ technical interviews for junior/mid-level engineers. Established runbook and postmortem culture for incident response. Championed coding standards (PEP8, TDD, Django structure). Led backlog grooming with story point re-estimation techniques for accurate sprint planning.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -139,7 +139,7 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
         \resumeItem{High-Volume Data Pipelines}
           {Built and maintained data pipeline processing 5M+ daily events across scheduler, scraper, data I/O, and Apache Flink services. Ensured sub-second latency for mission-critical shipment tracking.}
         \resumeItem{Cross-Functional Collaboration}
-          {Authored 4+ Technical Designs collaborating with Product and Design through HLD meetings. Translated customer requirements into scalable, maintainable architectures.}
+          {Authored 4+ Technical Designs collaborating with Product and Design through HLD meetings. Applied ubiquitous language (DDD) to align technical and business domains. Presented complex systems (AI agents, tool architectures) to non-technical stakeholders.}
         \resumeItem{Email Extraction Platform}
           {Designed pattern-based email extraction engine (Regex/XPath/custom formatters) with Kafka CDC pipeline. System running 3+ years in production processing shipment notification emails.}
         \resumeItem{Architectural Decision-Making}
@@ -149,11 +149,11 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
         \resumeItem{Celery Pipeline Architecture}
           {Built Collection Point data pipeline using Celery canvas patterns (chain, chord, group) with optimized worker configuration for scalability. Designed simple, maintainable task breakdown (8K+ postal codes chunked into parallel sub-tasks). Evaluated 3 scheduling approaches; selected Celery Beat for auto-retry and fault tolerance.}
         \resumeItem{System Reliability \& Incident Response}
-          {Resolved critical production incidents: BFCM traffic spikes (10x load), diagnosed and documented Redis cluster hotspot solutions, and executed emergency data re-imports (1.6M shipments in 2 days). Established incident response protocols and contributed technical blog posts for knowledge sharing.}
+          {Resolved critical production incidents: BFCM traffic spikes (10x load), diagnosed Redis cluster hotspots. Built recovery script in 24 hours to restore 1.5M records across multiple services for enterprise customer. Documented solutions via technical blog posts.}
         \resumeItem{Large-Scale Data Migrations}
           {Executed production data migrations handling SQL timeout constraints, autovacuum optimization, and strategic indexing. Implemented incremental update patterns to minimize downtime and ensure data consistency across distributed systems.}
-        \resumeItem{Open Source \& Innovation}
-          {Introduced Django Ninja framework (adopted company-wide), TDD practices, and coverage tooling. Proposed RabbitMQ migration to resolve Redis memory bottlenecks.}
+        \resumeItem{Testing \& Developer Experience}
+          {Authored testing best practices guide (AAA pattern, black-box testing, flaky test prevention) and presented company-wide. Led tool adoption: Poetry over pip, Ruff/Pyright linters, Django Ninja framework. Improved Docker-based local dev setup for faster onboarding and AI-assisted development.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -202,7 +202,7 @@ Senior Backend Engineer with 6 years building highly-available, scalable cloud s
 \section{Technical Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Architecture}{: High-Availability Systems, Microservices, DDD, System Design, RESTful APIs, TDD, Canary Deployments, Feature Toggles, Outbox Pattern, SSO/OAuth}
+     \textbf{Architecture}{: High-Availability Systems, Microservices, DDD, System Design, RESTful APIs, TDD, Idempotency, Outbox Pattern, Feature Toggles, SSO/OAuth}
    }
    \item{
      \textbf{Big Data \& Pipeline}{: Apache Flink, Kafka, Celery (canvas: chain/chord/group), Dagster, RabbitMQ}
