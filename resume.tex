@@ -136,6 +136,10 @@ Senior Backend Engineer with 6+ years building highly-available, scalable cloud 
           {Designed pattern-based email extraction engine (Regex/XPath/custom formatters) with Kafka CDC pipeline. System running 3+ years in production processing shipment notification emails.}
         \resumeItem{Architectural Decision-Making}
           {Evaluated 4 architectural approaches for email processing pipeline using structured criteria (reliability, scalability, maintainability). Selected app-based CDC over cronjob/Flink alternatives, documenting trade-offs and accepted drawbacks for transparent technical decisions.}
+        \resumeItem{Sync-to-Async Reliability Pattern}
+          {Designed fault-tolerant Booking API spanning 5+ microservices with sync-to-async fallback pattern. Implemented Kafka-based async processing as fallback when synchronous calls timeout, ensuring booking completion despite component failures.}
+        \resumeItem{Celery Pipeline Architecture}
+          {Built Collection Point data pipeline using Celery canvas patterns (chain, chord, group) with optimized worker configuration for scalability. Designed simple, maintainable task breakdown (8K+ postal codes chunked into parallel sub-tasks). Evaluated 3 scheduling approaches; selected Celery Beat for auto-retry and fault tolerance.}
         \resumeItem{System Reliability}
           {Resolved critical production incidents: BFCM traffic spikes (10x load), Redis cluster hotspots, and emergency data re-imports (1.6M shipments in 2 days). Established incident response protocols.}
         \resumeItem{Open Source \& Innovation}
@@ -193,16 +197,19 @@ Senior Backend Engineer with 6+ years building highly-available, scalable cloud 
      \textbf{Languages}{: Python, Scala, Java, JavaScript, SQL}
    }
    \item{
-     \textbf{Frameworks}{: Django, Django Ninja, FastAPI, Apache Flink, Celery, Dagster}
+     \textbf{Databases \& Data Stores}{: PostgreSQL, Redis, ClickHouse}
    }
    \item{
-     \textbf{Databases}{: PostgreSQL, Redis, ClickHouse, Kafka (streaming)}
+     \textbf{Web Frameworks}{: Django, Django Ninja, FastAPI}
    }
    \item{
-     \textbf{Cloud \& Infrastructure}{: AWS (EC2, S3, Bedrock), Docker, RabbitMQ, Grafana, Sentry, CI/CD}
+     \textbf{Big Data \& Pipeline}{: Apache Flink, Kafka, Celery (canvas: chain/chord/group), Dagster, RabbitMQ}
    }
    \item{
-     \textbf{AI/ML}{: LangChain, LangGraph, LangSmith, AWS Bedrock, AI Agents, Prompt Engineering}
+     \textbf{Infrastructure}{: AWS (EC2, S3, Bedrock), Docker, Grafana, Sentry, CI/CD}
+   }
+   \item{
+     \textbf{AI/ML}{: LangChain, LangGraph, LangSmith, AI Agents, Prompt Engineering}
    }
    \item{
      \textbf{Architecture}{: High-Availability Systems, Microservices, DDD, System Design, RESTful APIs, TDD}
